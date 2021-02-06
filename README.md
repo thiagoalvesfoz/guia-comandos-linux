@@ -48,18 +48,17 @@
 
 ## Comandos básicos de navegação
 
-| PROBLEMA                                                                | COMANDO                    |
-| ----------------------------------------------------------------------- | -------------------------- |
-| Quero navegar para pasta raiz do disco                                  | `cd /`                     |
-| Quero navegar para pasta raiz do meu usuário                            | `cd ~`                     |
-| Quero voltar uma a pasta anterior                                       | `cd ..`                    |
-| Quero criar uma nova pasta                                              | `mkdir <nome-da-pasta>`    |
-| Quero criar um arquivo                                                  | `touch <arquivo.extensao>` |
-| Quero que mostre o diretório atual de onde eu estou                     | `pwd`                      |
-| Quero voltar uma pasta anterior                                         | `cd ..`                    |
-| Quero remover uma **pasta vazia**                                       | `rmdir <nome-da-pasta>`    |
-| Quero remover uma pasta/diretorio e tudo que tem dentro                 | `rm -r <nome-da-pasta>`    |
-| Quero **FORÇAR** a remoção de uma pasta/diretorio e tudo que tem dentro | `rm -rf <nome-da-pasta>`   |
+| PROBLEMA                                                                    | COMANDO                    |
+| --------------------------------------------------------------------------- | -------------------------- |
+| Quero navegar para pasta raiz do disco                                      | `cd /`                     |
+| Quero navegar para pasta raiz do meu usuário                                | `cd ~`                     |
+| Quero voltar uma pasta anterior                                             | `cd ..`                    |
+| Quero criar uma nova pasta                                                  | `mkdir <nome-da-pasta>`    |
+| Quero criar um arquivo                                                      | `touch <arquivo.extensao>` |
+| Quero que mostre o diretório atual de onde eu estou                         | `pwd`                      |
+| Quero remover uma **pasta vazia**                                           | `rmdir <nome-da-pasta>`    |
+| Quero remover uma pasta/diretorio e tudo que tem dentro                     | `rm -r <nome-da-pasta>`    |
+| Quero **FORÇAR** a remoção de uma pasta/diretorio com tudo o que tem dentro | `rm -rf <nome-da-pasta>`   |
 
 ## Instalação de softwares com o gerenciador de pacotes "apt"
 
@@ -74,10 +73,10 @@
 
 ## Instalação de softwares baixados pela internet
 
-| PROBLEMA                                                                                                                                                                                                                                      | COMANDO                                   |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| Quero baixar um arquivo de instalação da internet.                                                                                                                                                                                            | `wget <url.deb>`                          |
-| Quero instalar um programa que eu baixei da internet. <br> **OBS:** Se houver problemas de dependências durante a instalação, rode na sequência o comando <br> `apt-get -f install`. (não é necessário o rodar o comando **dpkg** novamente.) | `dpkg -i <diretorio/arquivo-baixado.deb>` |
+| PROBLEMA                                                                                                                                                                                                                                 | COMANDO                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Quero baixar um arquivo de instalação da internet.                                                                                                                                                                                       | `wget <url.deb>`                          |
+| Quero instalar um programa que eu baixei da internet. <br> **OBS:** Se houver problemas de dependências durante a instalação, rode na sequência o comando `apt-get -f install`. (não é necessário o rodar o comando **dpkg** novamente.) | `dpkg -i <diretorio/arquivo-baixado.deb>` |
 
 ## Comandos para manipulação de arquivos
 
@@ -101,20 +100,20 @@
 | Quero listar todos os arquivos que possuem uma determinada extensão dentro de um diretório e seus subdiretórios       | `find <diretorio> -name '*.<extensao>'`        |
 | Quero listar tudo o que tem dentro do diretório, mas, limitando o nível de subdiretórios que será exibido no terminal | `find <diretorio> -maxdepth 1`                 |
 | Quero procurar todos os arquivos em um diretório que possuem um determinado nome, mas com limite de subdiretórios     | `find <diretorio> -maxdepth 1 -name <arquivo>` |
-| Quero quero mostre somente arquivos durante a listagem                                                                | `find <diretorio> -type f -name <arquivo>`     |
-| Quero quero mostre somente diretórios durante a listagem                                                              | `find <diretorio> -type d -name <arquivo>`     |
+| Quero mostrar somente arquivos durante a listagem                                                                     | `find <diretorio> -type f -name <arquivo>`     |
+| Quero mostrar somente diretórios durante a listagem                                                                   | `find <diretorio> -type d -name <arquivo>`     |
 
 ## Permissões
 
-| PROBLEMA                                                                                 | COMANDO                                     |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------- |
-| Quero listar os arquivos e diretórios mostrando as permissões                            | `ls -l`                                     |
-| Quero listar os arquivos e diretórios incluindo arquivos ocultos mostrando as permissões | `ls -l -a` ou `ls -la`                      |
-| Quero alterar a permissão de um arquivo ou pasta                                         | `chmod <permissao> <diretorio-ou-arquivo>`  |
-| Quero adicionar permissão de execução de um arquivo ou pasta para todos                  | `chmod +x <diretorio-ou-arquivo>`           |
-| Quero remover permissão de execução de um arquivo ou pasta para todos                    | `chmod -x <diretorio-ou-arquivo>`           |
-| Quero alterar o dono de um diretório ou arquivo                                          | `chown <usuario> <diretorio-ou-arquivo>`    |
-| Quero alterar o dono de um diretório e tudo que tem dentro dele                          | `chown <usuario> -R <diretorio-ou-arquivo>` |
+| PROBLEMA                                                                                           | COMANDO                                     |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Quero listar os arquivos e diretórios mostrando as permissões                                      | `ls -l`                                     |
+| Quero listar todos os arquivos e diretórios mostrando as permissões incluindo as que estão ocultas | `ls -l -a` ou `ls -la`                      |
+| Quero alterar a permissão de um arquivo ou pasta                                                   | `chmod <permissao> <diretorio-ou-arquivo>`  |
+| Quero adicionar permissão de execução de um arquivo ou pasta para todos                            | `chmod +x <diretorio-ou-arquivo>`           |
+| Quero remover permissão de execução de um arquivo ou pasta para todos                              | `chmod -x <diretorio-ou-arquivo>`           |
+| Quero alterar o dono de um diretório ou arquivo                                                    | `chown <usuario> <diretorio-ou-arquivo>`    |
+| Quero alterar o dono de um diretório e tudo que tem dentro dele                                    | `chown <usuario> -R <diretorio-ou-arquivo>` |
 
 ## Manutenção de sistema
 
