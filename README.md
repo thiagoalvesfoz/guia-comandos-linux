@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="pinguim.png" alt="Comandos úteis para git" width="120">
+  <img src="pinguim.png" alt="Comandos legais de linux" width="180">
   <br>
   O Guia de Comandos Linux
 </h1>
@@ -21,7 +21,7 @@
 | `rm`      | Utilizado para apagar permanentemente algum arquivo ou diretório           |
 | `mkdir`   | Utilizado para criar um novo [ **diretório / pasta** ]                     |
 | `touch`   | Utilizado para criar arquivos com qualquer extensão.                       |
-| `grep`    | procura por padrões e destaca em cores a palavra que o usuário especificar |
+| `grep`    | Procura por padrões e destaca em cores a palavra que o usuário especificar |
 | `sudo`    | Utilizado para executar comandos com permissão de usuário root             |
 | `history` | Mostra o histórico de comandos utilizados no terminal                      |
 
@@ -31,9 +31,9 @@
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `$`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário comum**                                                                                   |
 | `#`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário root**                                                                                    |
-| `./`    | significa "o diretório atual / a pasta atual"                                                                                                                            |
-| `../`   | significa "o diretório anterior / a pasta anterior"                                                                                                                      |
-| `*`     | significa "tudo ou todos" (exemplo: `*.txt`. todos os arquivos que terminem com .txt)                                                                                    |
+| `./`    | Significa "o diretório atual / a pasta atual"                                                                                                                            |
+| `../`   | Significa "o diretório anterior / a pasta anterior"                                                                                                                      |
+| `*`     | Significa "tudo ou todos" (exemplo: `*.txt`. todos os arquivos que terminem com .txt)                                                                                    |
 | &#124;  | Faz o encadeamento de comandos. <br> Ex: ( **ls &#124; grep a** ) primeiro faz a listagem, o resultado cai no segundo comando que filtra todo o conteúdo iniciando com a |
 
 ## Comandos úteis para obter informações do S.O
@@ -103,7 +103,7 @@
 | Quero mostrar somente arquivos durante a listagem                                                                     | `find <diretorio> -type f -name <arquivo>`     |
 | Quero mostrar somente diretórios durante a listagem                                                                   | `find <diretorio> -type d -name <arquivo>`     |
 
-## Permissões
+<h2 > Permissões. <a href="#permissao" style="font-size:75%">Ver mais </a></h2>
 
 | PROBLEMA                                                                                           | COMANDO                                     |
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------- |
@@ -162,3 +162,41 @@
 | Quero copiar um arquivo de uma máquina remota para a minha máquina | `scp <usuario@IP-REMOTO:diretorio/arquivo-remoto> <meu-diretorio>` |
 | Quero copiar o diretório inteiro                                   | `scp -r <args...>`                                                 |
 | Quero copiar um arquivo ou diretório utilizando compactação        | `scp -C <args...>`                                                 |
+
+<br>
+<br>
+<h2 id="permissao"> Entendendo as permissões no linux </h2>
+
+### Tabela de permissões
+
+| CHAR | BINARIO | DECIMAL | PERMISSÃO          |
+| ---- | ------- | ------- | ------------------ |
+| ---  | 000     | 0       | Nenhuma permissão  |
+| --x  | 001     | 1       | Execução           |
+| -w-  | 010     | 2       | Escrita            |
+| -wx  | 011     | 3       | Escrita e execucão |
+| r--  | 100     | 4       | Leitura            |
+| r-x  | 101     | 5       | Leitura e execução |
+| rw-  | 110     | 6       | Leitura e escrita  |
+| rwx  | 111     | 7       | Permissao total    |
+
+### comando chmod explicado
+
+| COMANDO | PROPRIETÁRIO | GRUPO | OUTROS | ARQUIVO               | O QUE FAZ                                                                                                                                                                                     |
+| ------- | ------------ | ----- | ------ | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `chmod` | `7`          | `5`   | `1`    | `<diretorio/arquivo>` | O primeiro número da permissão total para o dono. <br> O segundo número dá permissão de leitura e execução para o grupo. <br> O terceiro número dá permissão de execução para outros usuários |
+
+### Estrutura das permissões mostrada no terminal
+
+| TIPO | PROPRIETÁRIO | GRUPO | OUTROS | ARQUIVO               |
+| ---- | ------------ | ----- | ------ | --------------------- |
+| -    | ---          | ---   | ---    | Ex: Nenhuma permissão |
+| -    | rwx          | r-x   | --x    | texto.txt             |
+| d    | rwx          | r-x   | --x    | /diretorio            |
+| i    | rwx          | r-x   | --x    | atalhos               |
+
+> O primeiro hífen faz referência ao tipo, em seguida há 3 hífens agrupados por tipos de usuários.
+
+- `text.tx` tem permissão total para o dono do arquivo, leitura e execução para o grupo e somente execução para outros usuários.
+- `/diretorio` possui as mesmas permissões que o texto.txt
+- `atalho ou link simbolico` possui as mesmas permissões que o arquivo texto.txt
