@@ -13,16 +13,17 @@
 
 ## Operadores básicos
 
-| COMANDO   | O QUE ELE FAZ                                                    |
-| --------- | ---------------------------------------------------------------- |
-| `cd`      | Utilizado para fazer a navegação entre [ pastas / diretórios ]   |
-| `ls`      | Utilizado para listar tudo o que tem dentro de um diretório      |
-| `cat`     | Utilizado para mostrar o conteúdo dentro do arquivo no terminal  |
-| `rm`      | Utilizado para apagar permanentemente algum arquivo ou diretório |
-| `mkdir`   | Utilizado para criar um novo [ **diretório / pasta** ]           |
-| `touch`   | Utilizado para criar arquivos com qualquer extensão.             |
-| `sudo`    | Utilizado para executar comandos com permissão de usuário root   |
-| `history` | Mostra o histórico de comandos utilizados no terminal            |
+| COMANDO   | O QUE ELE FAZ                                                              |
+| --------- | -------------------------------------------------------------------------- |
+| `cd`      | Utilizado para fazer a navegação entre [ pastas / diretórios ]             |
+| `ls`      | Utilizado para listar tudo o que tem dentro de um diretório                |
+| `cat`     | Utilizado para mostrar o conteúdo dentro do arquivo no terminal            |
+| `rm`      | Utilizado para apagar permanentemente algum arquivo ou diretório           |
+| `mkdir`   | Utilizado para criar um novo [ **diretório / pasta** ]                     |
+| `touch`   | Utilizado para criar arquivos com qualquer extensão.                       |
+| `grep`    | procura por padrões e destaca em cores a palavra que o usuário especificar |
+| `sudo`    | Utilizado para executar comandos com permissão de usuário root             |
+| `history` | Mostra o histórico de comandos utilizados no terminal                      |
 
 ## Simbolos Importantes
 
