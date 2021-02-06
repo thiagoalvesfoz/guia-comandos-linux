@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="pinguim.png" alt="Comandos legais de linux" width="180">
+  <img src="pinguim-min.png" alt="Comandos legais de linux">
   <br>
   O Guia de Comandos Linux
 </h1>
