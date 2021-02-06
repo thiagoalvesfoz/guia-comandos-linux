@@ -200,7 +200,7 @@
 | rw-  | 110     | 6       | Leitura e escrita  |
 | rwx  | 111     | 7       | Permissao total    |
 
-<h3 id="chmod">comando chmod explicado
+<h3 id="chmod">comando chmod explicado</h3>
 
 | COMANDO | PROPRIETÁRIO | GRUPO | OUTROS | ARQUIVO               | O QUE FAZ                                                                                                                                                                                     |
 | ------- | ------------ | ----- | ------ | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
