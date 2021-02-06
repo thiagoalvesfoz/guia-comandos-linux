@@ -11,7 +11,27 @@
 - **DISTRO LINUX:** O Linux (GNU/Linux) em si, é apenas um kernel de Sistema Operacional. Não existe um Linux S.O oficial, na verdade, o que existem são distribuições feitas em cima do kernel do linux, dentre elas estão o ubuntu, fedora, manjaro, debian, centOS e etc... Todas essas distribuições são conhecidas como **distro linux**, e por serem baseados no kernel linux, essas distros tendem a compartilhar os mesmos comandos de terminal.
 - **SUDO:** Alguns comandos requerem que você tenha permissão root para serem executados. A menos que você não esteja no modo root, utilize a palavra **sudo** antes de executar comandos que exigem uma permissão de usuário root.
 
-## Operadores básicos
+## Sumário
+
+1. <a href="#operators">Operadores básicos</a>
+2. <a href="#simbols">Simbos Importantes</a>
+3. <a href="#so">Comandos úteis para obter informações do S.O</a>
+4. <a href="#navigation">Comandos básicos de navegação no terminal</a>
+5. <a href="#package-manager">Instalação de softwares com o gerenciador de pacotes "apt"</a>
+6. <a href="#install">Instalação de softwares baixados pela internet</a>
+7. <a href="#files">Manipulação de arquivos</a>
+8. <a href="#search">Comandos para pesquisa</a>
+9. <a href="#permission">Alterando permissões</a>
+10. <a href="#maintenance">Manutenção do sistema</a>
+11. <a href="#process">Processos e serviços</a>
+12. <a href="#network">Comandos de rede</a>
+13. <a href="#ssh">Utilidades para o SSH</a>
+14. <a href="#permission-tutorial">Entendendo as permissões no linux</a>
+    1. <a href="#permission-table">Tabela de permissões</a>
+    2. <a href="#chmod">Comando chmod explicado</a>
+    3. <a href="#structure">Estrutura das permissões mostrada no terminal</a>
+
+<h2 id="operators">Operadores básicos</h2>
 
 | COMANDO   | O QUE ELE FAZ                                                              |
 | --------- | -------------------------------------------------------------------------- |
@@ -25,7 +45,7 @@
 | `sudo`    | Utilizado para executar comandos com permissão de usuário root             |
 | `history` | Mostra o histórico de comandos utilizados no terminal                      |
 
-## Simbolos Importantes
+<h2 id="simbols">Simbolos Importantes</h2>
 
 | SIMBOLO | O QUE SIGNIFICA                                                                                                                                                          |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -36,7 +56,7 @@
 | `*`     | Significa "tudo ou todos" (exemplo: `*.txt`. todos os arquivos que terminem com .txt)                                                                                    |
 | &#124;  | Faz o encadeamento de comandos. <br> Ex: ( **ls &#124; grep a** ) primeiro faz a listagem, o resultado cai no segundo comando que filtra todo o conteúdo iniciando com a |
 
-## Comandos úteis para obter informações do S.O
+<h2 id="so">Comandos úteis para obter informações do S.O</h2>
 
 | PROBLEMA                                                                         | COMANDO              |
 | -------------------------------------------------------------------------------- | -------------------- |
@@ -46,7 +66,7 @@
 | Quero ver a versão atual da minha distro                                         | `cat /etc/*-release` |
 | Quero entrar no modo usuário root para executar comandos com permissões elevadas | `sudo su`            |
 
-## Comandos básicos de navegação
+<h2 id="navigation">Comandos básicos de navegação no terminal</h2>
 
 | PROBLEMA                                                                    | COMANDO                    |
 | --------------------------------------------------------------------------- | -------------------------- |
@@ -60,7 +80,7 @@
 | Quero remover uma pasta/diretorio e tudo que tem dentro                     | `rm -r <nome-da-pasta>`    |
 | Quero **FORÇAR** a remoção de uma pasta/diretorio com tudo o que tem dentro | `rm -rf <nome-da-pasta>`   |
 
-## Instalação de softwares com o gerenciador de pacotes "apt"
+<h2 id="package-manager">Instalação de softwares com o gerenciador de pacotes "apt"</h2>
 
 | PROBLEMA                                                                                                       | COMANDO                                               |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -71,14 +91,14 @@
 | Quero fazer uma pesquisa no repositório                                                                        | `apt-cache search <programa>`                         |
 | Quero fazer uma pesquisa no repositório filtrando por palavra-chave                                            | `apt-cache search <programa>` &#124; `grep <palavra>` |
 
-## Instalação de softwares baixados pela internet
+<h2 id="install">Instalação de softwares baixados pela internet</h2>
 
 | PROBLEMA                                                                                                                                                                                                                                 | COMANDO                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | Quero baixar um arquivo de instalação da internet.                                                                                                                                                                                       | `wget <url.deb>`                          |
 | Quero instalar um programa que eu baixei da internet. <br> **OBS:** Se houver problemas de dependências durante a instalação, rode na sequência o comando `apt-get -f install`. (não é necessário o rodar o comando **dpkg** novamente.) | `dpkg -i <diretorio/arquivo-baixado.deb>` |
 
-## Comandos para manipulação de arquivos
+<h2 id="files">Manipulação de arquivos</h2>
 
 | PROBLEMA                                                                                | COMANDO                                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------------- |
@@ -91,7 +111,7 @@
 | Quero ver as últimas linhas do conteúdo de um arquivo no terminal                       | `tail <arquivo>`                          |
 | Quero ver as últimas linhas de um arquivo no terminal em tempo real                     | `tail -f <arquivo>`                       |
 
-## Comandos para Pesquisa
+<h2 id="search">Comandos para Pesquisa</h2>
 
 | PROBLEMA                                                                                                              | COMANDO                                        |
 | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -103,7 +123,7 @@
 | Quero mostrar somente arquivos durante a listagem                                                                     | `find <diretorio> -type f -name <arquivo>`     |
 | Quero mostrar somente diretórios durante a listagem                                                                   | `find <diretorio> -type d -name <arquivo>`     |
 
-<h2 > Permissões. <a href="#permissao" style="font-size:75%">Ver mais </a></h2>
+<h2 id="maintenance"> Alterando permissões <a href="#permission-tutorial" style="font-size:16px">Ver tutorial </a></h2>
 
 | PROBLEMA                                                                                           | COMANDO                                     |
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------- |
@@ -115,7 +135,7 @@
 | Quero alterar o dono de um diretório ou arquivo                                                    | `chown <usuario> <diretorio-ou-arquivo>`    |
 | Quero alterar o dono de um diretório e tudo que tem dentro dele                                    | `chown <usuario> -R <diretorio-ou-arquivo>` |
 
-## Manutenção de sistema
+<h2 id="maintenance">Manutenção do sistema</h2>
 
 | PROBLEMA                                                                           | COMANDO                |
 | ---------------------------------------------------------------------------------- | ---------------------- |
@@ -126,7 +146,7 @@
 | Quero ver informações da memoria ram de forma amigável `-h`                        | `free -h`              |
 | Quero ver informações do processador                                               | `lscpu`                |
 
-## Processos e serviços
+<h2 id="process">Processos e serviços</h2>
 
 | PROBLEMA                                                                  | COMANDO                           |
 | ------------------------------------------------------------------------- | --------------------------------- |
@@ -143,7 +163,7 @@
 | Quero reiniciar um serviço                                                | `service <serviço> restart`       |
 | Quer matar um processo pelo código PID                                    | `kill <PID>`                      |
 
-## Rede
+<h2 id="network">Comandos de rede</h2>
 
 | PROBLEMA                                                                                  | COMANDO                   |
 | ----------------------------------------------------------------------------------------- | ------------------------- |
@@ -154,7 +174,7 @@
 | Quero ver informações da minha interface de rede                                          | `ifconfig`                |
 | Quero ver informações da minha interface de rede **²**                                    | `ip addr`                 |
 
-## Utilidades para SSH
+<h2 id="ssh">Utilidades para o SSH</h2>
 
 | PROBLEMA                                                           | COMANDO                                                            |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
@@ -165,9 +185,9 @@
 
 <br>
 <br>
-<h2 id="permissao"> Entendendo as permissões no linux </h2>
+<h2 id="permission-tutorial"> Entendendo as permissões no linux </h2>
 
-### Tabela de permissões
+<h3 id="permission-table">Tabela de permissões</h3>
 
 | CHAR | BINARIO | DECIMAL | PERMISSÃO          |
 | ---- | ------- | ------- | ------------------ |
@@ -180,13 +200,13 @@
 | rw-  | 110     | 6       | Leitura e escrita  |
 | rwx  | 111     | 7       | Permissao total    |
 
-### comando chmod explicado
+<h3 id="chmod">comando chmod explicado
 
 | COMANDO | PROPRIETÁRIO | GRUPO | OUTROS | ARQUIVO               | O QUE FAZ                                                                                                                                                                                     |
 | ------- | ------------ | ----- | ------ | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `chmod` | `7`          | `5`   | `1`    | `<diretorio/arquivo>` | O primeiro número da permissão total para o dono. <br> O segundo número dá permissão de leitura e execução para o grupo. <br> O terceiro número dá permissão de execução para outros usuários |
 
-### Estrutura das permissões mostrada no terminal
+<h3 id="structure">Estrutura das permissões mostrada no terminal</h3>
 
 | TIPO | PROPRIETÁRIO | GRUPO | OUTROS | ARQUIVO               |
 | ---- | ------------ | ----- | ------ | --------------------- |
