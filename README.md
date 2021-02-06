@@ -32,7 +32,7 @@
 | `$`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário comum**                                                                                   |
 | `#`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário root**                                                                                    |
 | `./`     | significa "o diretório atual / a pasta atual"                                                                                                                            |
-| `..`    | significa "o diretório anterior / a pasta anterior"                                                                                                                      |
+| `../`    | significa "o diretório anterior / a pasta anterior"                                                                                                                      |
 | `*`     | significa "tudo" (exemplo: `*.txt`. todos os arquivos que terminem com .txt)                                                                                             |
 | &#124;  | Faz o encadeamento de comandos. <br> Ex: ( **ls &#124; grep a** ) primeiro faz a listagem, o resultado cai no segundo comando que filtra todo o conteúdo iniciando com a |
 
