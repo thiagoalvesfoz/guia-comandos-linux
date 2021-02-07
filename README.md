@@ -1,18 +1,18 @@
 <h1 align="center">
-  <img src="pinguim-min.png" alt="Comandos legais de linux">
+  <img src="pinguim-mini.png" alt="Comandos legais de linux" width="180px">
   <br>
   O Guia de Comandos Linux
 </h1>
 <p>Esse guia foi criado para ajudar pessoas que querem migrar de sistema operacional para uma distro linux. Sinta-se a vontade para adicionar, fazer correções ou melhorar a descrição de alguns comandos listados aqui</p>
 
-  
-> Fiz também um guia de comandos para se dar bem no GIT, você pode acessar [por aqui](https://github.com/thiagoalvesfoz/comandos-git)
- 
+> Fiz também um guia de comandos para se dar bem com GIT, você pode acessar [por aqui](https://github.com/thiagoalvesfoz/comandos-git)
 
 ## Linguagem Linux
 
 - **DIRETÓRIOS:** Diferente do Windows, no linux é mais comum utilizar o termo **diretório** do que o termo **pasta** para se referir a uma localização no disco
-- **DISTRO LINUX:** O Linux (GNU/Linux) em si, é apenas um kernel de Sistema Operacional. Não existe um Linux S.O oficial, na verdade, o que existem são distribuições feitas em cima do kernel do linux, dentre elas estão o ubuntu, fedora, manjaro, debian, centOS e etc... Todas essas distribuições são conhecidas como **distro linux**, e por serem baseados no kernel linux, essas distros tendem a compartilhar os mesmos comandos de terminal.
+
+- **DISTRO LINUX:** O Linux (GNU/Linux) em si, é apenas um kernel de Sistema Operacional. Não existe um Linux S.O oficial, na verdade, o que existe são distribuições feitas em cima do kernel do linux, dentre elas estão o ubuntu, fedora, manjaro, debian, centOS e etc... Todas essas distribuições são conhecidas como **distro linux**, e por serem baseados no kernel do linux, essas distros tendem a compartilhar os mesmos comandos no terminal.
+
 - **SUDO:** Alguns comandos requerem que você tenha permissão root para serem executados. A menos que você não esteja no modo root, utilize a palavra **sudo** antes de executar comandos que exigem uma permissão de usuário root.
 
 ## Sumário
@@ -205,7 +205,7 @@
 | rw-  | 110     | 6       | Leitura e escrita  |
 | rwx  | 111     | 7       | Permissao total    |
 
-<h3 id="chmod">comando chmod explicado</h3>
+<h3 id="chmod">Comando chmod explicado</h3>
 
 | COMANDO | PROPRIETÁRIO | GRUPO | OUTROS | ARQUIVO               | O QUE FAZ                                                                                                                                                                                     |
 | ------- | ------------ | ----- | ------ | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
