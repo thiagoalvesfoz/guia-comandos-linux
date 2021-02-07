@@ -44,6 +44,7 @@
 | `grep`    | Procura por padrões e destaca em cores a palavra que o usuário especificar |
 | `sudo`    | Utilizado para executar comandos com permissão de usuário root             |
 | `history` | Mostra o histórico de comandos utilizados no terminal                      |
+| `clear`   | Limpa o terminal                                                           |
 
 <h2 id="simbols">Simbolos Importantes</h2>
 
