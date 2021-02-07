@@ -5,6 +5,10 @@
 </h1>
 <p>Esse guia foi criado para ajudar pessoas que querem migrar de sistema operacional para uma distro linux. Sinta-se a vontade para adicionar, fazer correções ou melhorar a descrição de alguns comandos listados aqui</p>
 
+  
+> Fiz também um guia de comandos para se dar bem no GIT, você pode acessar [por aqui](https://github.com/thiagoalvesfoz/comandos-git)
+ 
+
 ## Linguagem Linux
 
 - **DIRETÓRIOS:** Diferente do Windows, no linux é mais comum utilizar o termo **diretório** do que o termo **pasta** para se referir a uma localização no disco
