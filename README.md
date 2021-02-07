@@ -18,7 +18,7 @@
 ## Sumário
 
 1. <a href="#operators">Operadores básicos</a>
-2. <a href="#simbols">Simbos Importantes</a>
+2. <a href="#simbols">Símbolos Importantes</a>
 3. <a href="#so">Comandos úteis para obter informações do S.O</a>
 4. <a href="#navigation">Comandos básicos de navegação no terminal</a>
 5. <a href="#package-manager">Instalação de softwares com o gerenciador de pacotes "apt"</a>
@@ -50,7 +50,7 @@
 | `history` | Mostra o histórico de comandos utilizados no terminal                      |
 | `clear`   | Limpa o terminal                                                           |
 
-<h2 id="simbols">Simbolos Importantes</h2>
+<h2 id="simbols">Símbolos Importantes</h2>
 
 | SIMBOLO | O QUE SIGNIFICA                                                                                                                                                          |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
