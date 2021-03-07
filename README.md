@@ -19,18 +19,19 @@
 
 1. <a href="#operators">Operadores básicos</a>
 2. <a href="#simbols">Símbolos Importantes</a>
-3. <a href="#so">Comandos úteis para obter informações do S.O</a>
-4. <a href="#navigation">Comandos básicos de navegação no terminal</a>
-5. <a href="#package-manager">Instalação de softwares com o gerenciador de pacotes "apt"</a>
-6. <a href="#install">Instalação de softwares baixados pela internet</a>
-7. <a href="#files">Manipulação de arquivos</a>
-8. <a href="#search">Comandos para pesquisa</a>
-9. <a href="#permission">Alterando permissões</a>
-10. <a href="#maintenance">Manutenção do sistema</a>
-11. <a href="#process">Processos e serviços</a>
-12. <a href="#network">Comandos de rede</a>
-13. <a href="#ssh">Utilidades para o SSH</a>
-14. <a href="#permission-tutorial">Entendendo as permissões no linux</a>
+3. <a href="#atalhos">Atalhos do terminal</a>
+4. <a href="#so">Comandos úteis para obter informações do S.O</a>
+5. <a href="#navigation">Comandos básicos de navegação no terminal</a>
+6. <a href="#package-manager">Instalação de softwares com o gerenciador de pacotes "apt"</a>
+7. <a href="#install">Instalação de softwares baixados pela internet</a>
+8. <a href="#file">Manipulação de arquivos</a>
+9. <a href="#search">Comandos para pesquisa</a>
+10. <a href="#permission">Alterando permissões</a>
+11. <a href="#maintenance">Manutenção do sistema</a>
+12. <a href="#process">Processos e serviços</a>
+13. <a href="#network">Comandos de rede</a>
+14. <a href="#ssh">Utilidades para o SSH</a>
+15. <a href="#permission-tutorial">Entendendo as permissões no linux</a>
     1. <a href="#permission-table">Tabela de permissões</a>
     2. <a href="#chmod">Comando chmod explicado</a>
     3. <a href="#structure">Estrutura das permissões mostrada no terminal</a>
@@ -49,17 +50,29 @@
 | `sudo`    | Utilizado para executar comandos com permissão de usuário root             |
 | `history` | Mostra o histórico de comandos utilizados no terminal                      |
 | `clear`   | Limpa o terminal                                                           |
+| `exit`    | encerra a sessão atual no terminal                                         |
 
 <h2 id="simbols">Símbolos Importantes</h2>
 
-| SIMBOLO | O QUE SIGNIFICA                                                                                                                                                          |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `$`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário comum**                                                                                   |
-| `#`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário root**                                                                                    |
-| `./`    | Significa "o diretório atual / a pasta atual"                                                                                                                            |
-| `../`   | Significa "o diretório anterior / a pasta anterior"                                                                                                                      |
-| `*`     | Significa "tudo ou todos" (exemplo: `*.txt`. todos os arquivos que terminem com .txt)                                                                                    |
-| &#124;  | Faz o encadeamento de comandos. <br> Ex: ( **ls &#124; grep a** ) primeiro faz a listagem, o resultado cai no segundo comando que filtra todo o conteúdo iniciando com a |
+| PROBLEMA                                                                         | COMANDO              |
+| -------------------------------------------------------------------------------- | -------------------- |
+| Quero ver a data e hora atual                                                    | `date`               |
+| Quero ver o tempo que o S.O está ligado                                          | `uptime`             |
+| Quero ver qual usuário está logado                                               | `whoami`             |
+| Quero ver a versão atual da minha distro                                         | `cat /etc/*-release` |
+| Quero entrar no modo usuário root para executar comandos com permissões elevadas | `sudo su`            |
+
+<h2 id="atalhos">Atalhos do terminal</h2>
+
+| ATALHO           | O QUE ELE FAZ                                         |
+| ---------------- | ----------------------------------------------------- |
+| `CTRL + ALT + T` | Abre o terminal linux                                 |
+| `CTRL + C`       | Cancela o comando atual em funcionamento              |
+| `CTRL + W`       | Apaga a palavra digitada da linha de comando          |
+| `CTRL + U`       | Apaga a linha inteira                                 |
+| `CTRL + L`       | equivalente ao comando `clear`, limpa a tela          |
+| `CTRL + R`       | Busca um comando recente                              |
+| `CTRL + D`       | equivalente ao comando `exit`, encerra a sessão atual |
 
 <h2 id="so">Comandos úteis para obter informações do S.O</h2>
 
@@ -103,7 +116,7 @@
 | Quero baixar um arquivo de instalação da internet.                                                                                                                                                                                       | `wget <url.deb>`                          |
 | Quero instalar um programa que eu baixei da internet. <br> **OBS:** Se houver problemas de dependências durante a instalação, rode na sequência o comando `apt-get -f install`. (não é necessário o rodar o comando **dpkg** novamente.) | `dpkg -i <diretorio/arquivo-baixado.deb>` |
 
-<h2 id="files">Manipulação de arquivos</h2>
+<h2 id="file">Manipulação de arquivos</h2>
 
 | PROBLEMA                                                                                | COMANDO                                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------------- |
