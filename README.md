@@ -62,6 +62,8 @@
 | `../`   | Significa "o diretório anterior / a pasta anterior"                                                                                                                      |
 | `*`     | Significa "tudo ou todos" (exemplo: `*.txt`. todos os arquivos que terminem com .txt)                                                                                    |
 | &#124;  | Faz o encadeamento de comandos. <br> Ex: ( **ls &#124; grep a** ) primeiro faz a listagem, o resultado cai no segundo comando que filtra todo o conteúdo iniciando com a |
+| `>`     | Redireciona a saida de um comando para um arquivo, se não o arquivo não existir então é criado, caso o arquivo já exista então é substuido todo conteúdo.                |
+| `>>`    | Redireciona a saida de um comando para um arquivo, caso este já exista então é acrescentado o conteúdo no arquivo ao final da linha.                                     |
 
 <h2 id="atalhos">Atalhos do terminal</h2>
 
