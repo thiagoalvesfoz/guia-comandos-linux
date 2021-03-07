@@ -54,13 +54,14 @@
 
 <h2 id="simbols">Símbolos Importantes</h2>
 
-| PROBLEMA                                                                         | COMANDO              |
-| -------------------------------------------------------------------------------- | -------------------- |
-| Quero ver a data e hora atual                                                    | `date`               |
-| Quero ver o tempo que o S.O está ligado                                          | `uptime`             |
-| Quero ver qual usuário está logado                                               | `whoami`             |
-| Quero ver a versão atual da minha distro                                         | `cat /etc/*-release` |
-| Quero entrar no modo usuário root para executar comandos com permissões elevadas | `sudo su`            |
+| SIMBOLO | O QUE SIGNIFICA                                                                                                                                                          |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `$`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário comum**                                                                                   |
+| `#`     | Esse simbolo no inicio do terminal, indica que você está logado como **usuário root**                                                                                    |
+| `./`    | Significa "o diretório atual / a pasta atual"                                                                                                                            |
+| `../`   | Significa "o diretório anterior / a pasta anterior"                                                                                                                      |
+| `*`     | Significa "tudo ou todos" (exemplo: `*.txt`. todos os arquivos que terminem com .txt)                                                                                    |
+| &#124;  | Faz o encadeamento de comandos. <br> Ex: ( **ls &#124; grep a** ) primeiro faz a listagem, o resultado cai no segundo comando que filtra todo o conteúdo iniciando com a |
 
 <h2 id="atalhos">Atalhos do terminal</h2>
 
@@ -120,7 +121,9 @@
 
 | PROBLEMA                                                                                | COMANDO                                   |
 | --------------------------------------------------------------------------------------- | ----------------------------------------- |
-| Quero copiar um arquivo e enviar para outro diretório (ctrl+c - ctrl + v)               | `cp <arquivo-origem> <diretorio-destino>` |
+| Quero **RENOMEAR** um arquivo                                                           | `mv <nome-atual> <novo-nome>`             |
+| Quero **MOVER** um arquivo para outro diretório                                         | `mv <arquivo-origem> <diretorio-destino>` |
+| Quero **COPIAR** um arquivo e enviar para outro diretório (ctrl+c - ctrl + v)           | `cp <arquivo-origem> <diretorio-destino>` |
 | Quero que mostre no terminal o conteúdo dentro de um arquivo                            | `cat <arquivo.extensao>`                  |
 | Quero que mostre em binário o conteúdo dentro de um arquivo                             | `xxd -b <arquivo.extensao>`               |
 | Quero que mostre com paginação o conteúdo dentro de um arquivo.                         | `cat <arquivo.extensao>` &#124; `more`    |
