@@ -127,11 +127,13 @@
 | Quero **MOVER** um arquivo para outro diretório                                         | `mv <arquivo-origem> <diretorio-destino>` |
 | Quero **COPIAR** um arquivo e enviar para outro diretório (ctrl+c - ctrl + v)           | `cp <arquivo-origem> <diretorio-destino>` |
 | Quero que mostre no terminal o conteúdo dentro de um arquivo                            | `cat <arquivo.extensao>`                  |
+| Quero que mostre no terminal o conteúdo dentro de um arquivo em ordem inversa           | `tac <arquivo.extensao>`                  |
 | Quero que mostre em binário o conteúdo dentro de um arquivo                             | `xxd -b <arquivo.extensao>`               |
 | Quero que mostre com paginação o conteúdo dentro de um arquivo.                         | `cat <arquivo.extensao>` &#124; `more`    |
 | Quero que mostre com paginação o conteúdo dentro de um arquivo. **²**                   | `less <arquivo.extensao>`                 |
 | Preciso filtrar por palavra-chave o conteúdo dentro de um arquivo e mostrar no terminal | `cat <arquivo>` &#124; `grep <palavra>`   |
-| Quero ver as últimas linhas do conteúdo de um arquivo no terminal                       | `tail <arquivo>`                          |
+| Quero ver as 10 primerias linhas do conteúdo de um arquivo no terminal                  | `head <arquivo>`                          |
+| Quero ver as 10 últimas linhas do conteúdo de um arquivo no terminal                    | `tail <arquivo>`                          |
 | Quero ver as últimas linhas de um arquivo no terminal em tempo real                     | `tail -f <arquivo>`                       |
 
 <h2 id="search">Comandos para Pesquisa</h2>
