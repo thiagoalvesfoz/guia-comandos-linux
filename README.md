@@ -26,12 +26,13 @@
 7. <a href="#install">Instalação de softwares baixados pela internet</a>
 8. <a href="#file">Manipulação de arquivos</a>
 9. <a href="#search">Comandos para pesquisa</a>
-10. <a href="#permission">Alterando permissões</a>
-11. <a href="#maintenance">Manutenção do sistema</a>
-12. <a href="#process">Processos e serviços</a>
-13. <a href="#network">Comandos de rede</a>
-14. <a href="#ssh">Utilidades para o SSH</a>
-15. <a href="#permission-tutorial">Entendendo as permissões no linux</a>
+10. <a href="#users-controls">Controle de usuários</a>
+11. <a href="#permission">Alterando permissões</a>
+12. <a href="#maintenance">Manutenção do sistema</a>
+13. <a href="#process">Processos e serviços</a>
+14. <a href="#network">Comandos de rede</a>
+15. <a href="#ssh">Utilidades para o SSH</a>
+16. <a href="#permission-tutorial">Entendendo as permissões no linux</a>
     1. <a href="#permission-table">Tabela de permissões</a>
     2. <a href="#chmod">Comando chmod explicado</a>
     3. <a href="#structure">Estrutura das permissões mostrada no terminal</a>
@@ -150,12 +151,27 @@
 | Quero mostrar somente arquivos durante a listagem                                                                     | `find <diretorio> -type f -name <arquivo>`     |
 | Quero mostrar somente diretórios durante a listagem                                                                   | `find <diretorio> -type d -name <arquivo>`     |
 
-<h2 id="maintenance"> Alterando permissões <a href="#permission-tutorial" style="font-size:16px">Ver tutorial </a></h2>
+<h2 id="users-controls">Controle de usuários</h2>
+
+| PROBLEMA                                          | COMANDO                                                       |
+| ------------------------------------------------- | ------------------------------------------------------------- |
+| Quero adicionar um novo usuário                   | `adduser <nome-usuario>`                                      |
+| Quero remover um usuário mantendo a pasta pessoal | `userdel <nome-usuario>`                                      |
+| Quero remover um usuário e a pasta pessoal        | `userdel -r <nome-usuario>`                                   |
+| Quero trocar de usuário                           | `sudo <usuario>`                                              |
+| Quero trocar a senha do meu usuário               | `passwd <nova-senha>`                                         |
+| Quero ver todos usuários                          | `cat /etc/passwd`                                             |
+| Quero ver todos os grupos                         | `cat /etc/group`                                              |
+| Quero adicionar um usuário em um grupo            | `adduser <usuario> <grupo>` ou `gpasswd -a <usuario> <grupo>` |
+| Quero remover um usuário de um grupo              | `gpasswd -d <usuario> <grupo>`                                |
+| Quero remover um grupo                            | `groupdel <grupo>`                                            |
+
+<h2 id="permission"> Alterando permissões <a href="#permission-tutorial" style="font-size:16px">Ver tutorial </a></h2>
 
 | PROBLEMA                                                                                           | COMANDO                                     |
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| Quero listar os arquivos e diretórios mostrando as permissões                                      | `ls -l`                                     |
-| Quero listar todos os arquivos e diretórios mostrando as permissões incluindo as que estão ocultas | `ls -l -a` ou `ls -la`                      |
+| Quero listar os arquivos e diretórios mostrando as permissões                                      | `ls -lh`                                    |
+| Quero listar todos os arquivos e diretórios mostrando as permissões incluindo as que estão ocultas | `ls -lha`                                   |
 | Quero alterar a permissão de um arquivo ou pasta                                                   | `chmod <permissao> <diretorio-ou-arquivo>`  |
 | Quero adicionar permissão de execução de um arquivo ou pasta para todos                            | `chmod +x <diretorio-ou-arquivo>`           |
 | Quero remover permissão de execução de um arquivo ou pasta para todos                              | `chmod -x <diretorio-ou-arquivo>`           |
