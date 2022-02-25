@@ -165,6 +165,11 @@
 | Quero adicionar um usuário em um grupo            | `adduser <usuario> <grupo>` ou `gpasswd -a <usuario> <grupo>` |
 | Quero remover um usuário de um grupo              | `gpasswd -d <usuario> <grupo>`                                |
 | Quero remover um grupo                            | `groupdel <grupo>`                                            |
+| Quero verificar o meu nome de usuário             | `whoami`                                                      |
+| Quero ver os dados do meu usuário e seus grupos   | `id`                                                          |
+| Quero o número de identificação do meu usuário    | `id -u`                                                       |
+| Quero saber a quais grupo meu usuário pertence    | `groups`                                                      |
+| Quero saber a quais grupo um usuário pertence     | `groups <usuario>`                                            |
 
 <h2 id="permission"> Alterando permissões <a href="#permission-tutorial" style="font-size:16px">Ver tutorial </a></h2>
 
